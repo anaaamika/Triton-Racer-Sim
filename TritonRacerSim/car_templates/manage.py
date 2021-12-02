@@ -86,6 +86,10 @@ def assemble_car(cfg = {}, args = {}, model_path = None):
             from TritonRacerSim.components.camera import Camera
             cam = Camera(cfg)
             car.addComponent(cam)
+        elif cfg['cam_type'] == 'INTELCAM':
+            from TritonRacerSim.components.intel_realsense_camera import IntelRealsenseCam
+            cam = IntelRealsenseCam(cfg)
+            car.addComponent(cam)
 
     #Image preprocessing
     if cfg['preprocessing_enabled']:

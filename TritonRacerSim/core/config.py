@@ -4,12 +4,12 @@ config = {
     'explanation': '''model_type: cnn_2d | cnn_2d_speed_as_feature | cnn_2d_speed_control | cnn_2d_full_house; joystick_type: ps4 | xbox | g28; sim_host: use 127.0.0.1 for local; track_data_file: used for position tracker to segment the track
     ''',
     # Camera Type
-    'cam_type': 'WEBCAM', # WEBCAM | MOCK Put mock if the camera is not actually installed
+    'cam_type': 'INTELCAM', # INTELCAM | WEBCAM | MOCK Put mock if the camera is not actually installed
     'img_w': 160, # Width after cropping
     'img_h': 120, # Height after cropping
     'image_format': 'rgb', # RGB or grey
     'cam_source': 0, # Index of camera
-    'cam_resolution': [320, 240], # Resolution of open camera, check with manufacturer for resolution support
+    'cam_resolution': [1289, 800], # Resolution of open camera, check with manufacturer for resolution support
 
     # Image Preprocessing
     'preprocessing_enabled': False, # Enable image filtering
